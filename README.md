@@ -34,6 +34,17 @@ Use to install the latest version of **cytoKernel** from GitHub:
 
     if (!require("devtools")) install.packages("devtools")
     devtools::install_github("Ghoshlab/cytoKernel")
+    
+It can also be installed using Bioconductor: 
+
+```s
+# install BiocManager from CRAN (if not already installed)
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+
+# install cytoKernel package
+BiocManager::install("cytoKernel")
+```    
 
 After installation, the package can be loaded into R.
 ```s
@@ -52,20 +63,20 @@ and samples as the columns (e.g. let’s call it `dataSE`).
 that represents the group condition for each sample. For example if the samples represent two different groups or conditions (e.g., before stimulation and after stimulation), provide CytoK() with a phenotype representing which columns in the object are different groups. (e.g. let’s call it `groupSamples`).
 (3) lowerRho (optional) a positive value that represents the lower bound of the kernel parameter. Default is 2.
 (4) upperRho (optional) a positive value that represents the upper bound of the kernel parameter. Default is 12.
-(5) gridRho (optional)* a positive value that represents the number of grid points in the interval of upper and bound of the kernel parameter. Default is 4.
+(5) gridRho (optional) a positive value that represents the number of grid points in the interval of upper and bound of the kernel parameter. Default is 4.
 (6) alpha (optional) level of significance to control the False Discovery
-rate (FDR). Default is 0.05).
+rate (FDR). Default is 0.05.
 (7) featureVars (optional) Vector of the columns which identify features. If a SummarizedExperiment is used for data, row variables will be used. Default is NULL.
 
 To run the `CytoK()` function,
 
     CytoKOutput <- CytoK(object = dataSE,
-    group_factor =groupSamples,                             lowerRho=2,upperRho=12,gridRho=4,
-    alpha = 0.05,featureVars = NULL)
+    group_factor =groupSamples, lowerRho=2, upperRho=12, gridRho=4,
+    alpha = 0.05, featureVars = NULL)
 
 Individual slots can be extracted using accessor methods:
 
-    CytoKFeatures(CytoKOutput) # extracts the data.frame with shrunk effect size, shrunk effect size sd, unadjusted p value and adjusted p value for each feature
+    CytoKFeatures(CytoKOutput) # extracts the data.frame with shrunken effect size, shrunken effect size sd, unadjusted p value and adjusted p value for each feature
     
      CytoKFeaturesOrdered(CytoKOutput) # extracts the data.frame with shrunken effect size, shrunken effect size sd, unadjusted p value and adjusted p value for each feature ordered by unadjusted p value from low to high
      
