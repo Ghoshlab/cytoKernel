@@ -55,7 +55,7 @@ library(cytoKernel)
 ### Using cytoKernel
 
 The main function in the **cytoKernel** package is `CytoK()`. The `CytoK()`
-function needs two required object and three optional objects: (1)
+function needs two required objects and three optional objects: (1)
 object: a data frame or a matrix or a Summarized Experiment with one
 assay object with observations (e.g., cluster-marker combinations or genes) on the rows.
 and samples as the columns (e.g. let’s call it `dataSE`).
