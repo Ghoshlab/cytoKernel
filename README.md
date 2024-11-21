@@ -1,13 +1,36 @@
 cytoKernel
 ====
 
+### `cytoKernel`: An R package for differential expression using kernel-based tests for high-dimensional biological data.
+
+`cytoKernel` computes the 
+feature-wise p values and their corresponding 
+adjusted p values in high-dimensional single cell experiments.
+
+### Method
+
+>Ghosh, T., Baxter, R.M., Seal, S., Lui, V.G., Rudra, P., Vu, T., Hsieh, E.W. and Ghosh, D., 2024. cytoKernel: Robust kernel >embeddings for assessing differential expression of single cell data. bioRxiv.
+> <https://doi.org/10.1101/2024.08.16.608287>
+
+
+### Installing cytoKernel (development version)
+
+The R-package **cytoKernel** can be installed from GitHub using the R package
+[remotes](https://github.com/r-lib/remotes):
+
+Use to install the development version of **cytoKernel** from GitHub:
+
+    if (!require("remotes")) install.packages("remotes")
+    remotes::install_github("Ghoshlab/cytoKernel@devel")
+    
+
 ### `cytoKernel`: An R/Bioconductor package for differential expression using kernel-based score test for high-dimensional biological data.
 
 `cytoKernel` computes the 
 feature-wise p values and their corresponding 
 adjusted p values in high-dimensional biological experiments.
 
-### Method
+### Methods
 
 > Liu D, Lin X, Ghosh D."Semiparametric regression of
 > multi-dimensional genetic pathway data: least-squares 
