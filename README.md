@@ -144,7 +144,9 @@ group_factor <- as.numeric(as.factor(group)) - 1
 
 ### Run CytoKernel Analysis
 - Run without covariates:
-  ```r
+  
+ ```r
+  
 Bacher_mms_cytoKernel <- cytoKernel::cytoKSCE_clusters_Fpsrf(
   Bacher_COVID_subset,
   group_factor = group_factor,
@@ -164,7 +166,8 @@ Bacher_mms_cytoKernel <- cytoKernel::cytoKSCE_clusters_Fpsrf(
 ```
 
 - Run with (dummy) covariates:
-  ```r
+  
+```r
 Bacher_mms_cytoKernel_design_covar <- cytoKernel::cytoKSCE_clusters_Fpsrf(
   Bacher_COVID_subset,
   group_factor = group_factor,
