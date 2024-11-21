@@ -18,7 +18,7 @@ adjusted p values in high-dimensional single cell experiments.
 The R-package **cytoKernel** can be installed from GitHub using the R package
 [remotes](https://github.com/r-lib/remotes):
 
-Use to install the latest version of **cytoKernel** from GitHub:
+Use to install the development version of **cytoKernel** from GitHub:
 
     if (!require("remotes")) install.packages("remotes")
     remotes::install_github("Ghoshlab/cytoKernel@devel")
