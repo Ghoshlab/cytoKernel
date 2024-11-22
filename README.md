@@ -12,6 +12,11 @@ adjusted p values in high-dimensional single cell experiments.
 >Ghosh, T., Baxter, R.M., Seal, S., Lui, V.G., Rudra, P., Vu, T., Hsieh, E.W. and Ghosh, D., 2024. cytoKernel: Robust kernel >embeddings for assessing differential expression of single cell data. bioRxiv.
 > <https://doi.org/10.1101/2024.08.16.608287>
 
+### cytoKernel Manuscript source code
+
+>Ghosh, T. (2024). cytoKernel: cytoKernel manuscript source code.
+> Zenodo. <https://doi.org/10.5281/zenodo.14003780>
+
 
 ### Installing cytoKernel (development version)
 
@@ -307,3 +312,4 @@ Contributors
 -   [Thao Vu]()
 -   [Elena Hsieh]()
 -   [Debashis Ghosh](https://github.com/ghoshd)
+
